@@ -1,0 +1,95 @@
+/*login page*/
+.bkg-fullscreen{
+  background-image: url('../images/datacenter2.jpg');
+  position:fixed;
+  top:0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-position: 50% 50%;
+
+}
+
+.bkg-fullscreen:before {
+    content: "";
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(68, 57, 170, 0.3);
+    background-image: none;
+    opacity: 0.6;
+}
+.login-dialogue{
+  position:relative;
+  margin: 0 auto;
+  top:10%;
+  width:400px; 
+  padding: 50px 30px 30px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+
+
+.badge-adjustment {
+    padding-top: 23px !important;
+    padding-left: 0px !important;
+}
+.search-badge-adjustment {
+    float: left !important;
+    display: inline-block !important;
+    min-width: 400px !important;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+    border-width: 10px；
+}
+.side-padding-40 {
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.top-padding-10 {
+    padding-top: 10px
+}
+.margin-bottom-15 {
+    margin-bottom: 15px;
+}
+h1.blue-header {
+    float: left !important;
+    line-height: 1.4 !important;
+    color: #2679b5;
+    font-size: 24px;
+    font-weight: lighter;
+    padding: 0;
+}
+.dashed-panel {
+    border: 2px dashed #D0D0D0;
+    border-radius: 10px;
+    padding: 5px 15px 20px 15px;
+    margin-bottom: 20px;
+    background-color: rgba(224, 226, 227, 0.25);
+}
+
