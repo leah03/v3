@@ -1,8 +1,10 @@
+'use strict';
 angular.module('v3App')
-.service('UserService',function($resource){
-	return{
+.factory('ClusterService',['$resource','setting','$http',function($resource,setting,$http){
 
+	return function(credential){
 	}
 
 
-})
+}]
+)

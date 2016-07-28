@@ -16,6 +16,7 @@ angular
     'ngCookies',
     'ngResource',
     'ngRoute',
+    'ngTable',
     'ngSanitize',
     'ngTouch'
   ])
