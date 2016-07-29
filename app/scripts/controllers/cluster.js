@@ -1,31 +1,35 @@
 'use strict'; 
 
 angular.module('v3App') 
-.controller('ClusterListController',['$scope','ClusterService','$state','ngTableParams','$modal','allClusterData',function($scope,ClusterService,$state,ngTableParams,$modal,allClusterData){
+.controller('ClusterListController',['$scope','ClusterService','$state','NgTableParams','$uibModal','allClusterData',function($scope,ClusterService,$state,NgTableParams,$uibModal,allClusterData){
 
 	$scope.state=$state;
-	//to-do, what is allclusterData
+	//mock
+	allClusterData={"name":"cluster"};
+	
 	ClusterService.getClusterProgress(allClusterData);
-	$scope.clusters=allclusterData
-	data=$scope.clusters;
+	$scope.clusters=allClusterData;
+	//data=$scope.clusters;
 
-	$scope.tableParams=new ngTableParams();
+	$scope.tableParams=new NgTableParams();
 
 	$scope.goToCluster=function(id,state){
 		clusterService.goToCluster(id,state);
 	}
 
 }])
-.controller('CreateClusterController',['$scope','ClusterService','$modal',function($scope,ClusterService,$modal){
+.controller('CreateClusterController',['$scope','ClusterService','$uibModal',function($scope,ClusterService,$uibModal){
 	
-		clusterService.getAdalpters($scope);
+		ClusterService.getAdapters($scope);
 		$scope.open= function(){
+
 			$scope.cluster={};
-			modalInstance = $modal.open({
-				templateUrl:'app/views/modalClusterCreate.tp.html',
-				controller:'newClusterModalController',
+			var modalInstance = $uibModal.open({
+				templateUrl:'/views/createClusterModal.html',
+				controller:'ClusterModalController',
 				resolve:{
-					allAdaptes:function(){
+					allAdapters:function(){
+						
 						return $scope.allAdapters;
 					},
 					cluster:function(){
@@ -34,18 +38,19 @@ angular.module('v3App')
 				}});
 			modalInstance.result.then(function(cluster){
 				$scope.cluster=cluster;
+				console.log(cluster);
 				postClusterData=function(){
 					name:"";
 					adapter_id:"";
 					os_id:"";
 				};
 				//postClusterData.flavor_id=cluster.flavor if cluster.flavor
-				clusterService.createCluster($scope, postClusterData);
+				//clusterService.createCluster($scope, postClusterData);
 				conosle.log("dismiss");
-			});ß
+			});
 	}
 }])
-.controller('ClusterModalController',['$scope','ClusterService','$modalInstance','allAdapters','cluster',function($scope,ClusterService,$modal,allAdapters,cluster){
+.controller('ClusterModalController',['$scope','ClusterService','$uibModalInstance','allAdapters','cluster',function($scope,ClusterService,$uibModalInstance,allAdapters,cluster){
 	$scope.allAdapters=allAdapters;
 	$scope.cluster=cluster;
 	$scope.updateSelectedAdapter=function(){
@@ -57,11 +62,11 @@ angular.module('v3App')
 		}
 	}
 	$scope.cancel=function(){
-		$modalInstance.dismiss('cancel');
+		$uibModalInstance.dismiss('cancel');
 	}
 	$scope.ok=function(){
 		$scope.result='ok';
-		$modalInstance.close($scope.cluster);
+		$uibModalInstance.close($scope.cluster);
 	}
 
 

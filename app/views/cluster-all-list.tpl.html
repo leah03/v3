@@ -1,0 +1,84 @@
+<div class="table-responsive">
+	<table ng-table="tableParams" class="ng-table table table-stripped table-hover nowrap">
+		<thead>
+			<tr>
+				<th class="sortable" ng-class="{
+				'sort-asc':tableParams.isSortBy('name','asc'),
+				'sort-desc':tableParams.isSortBy('name','desc')
+			}" ng click="tableParams.sorting({'name':tableParams.isSortBy('name','asc')? 'desc':'asc'})">
+				<div>
+					Cluster Name
+				</div>
+				</th>
+
+
+				<th>
+					State
+				</th>
+				<th>
+					Deployment Details
+				</th>
+				<th class="sortable" ng-class="{
+				'sort-asc':tableParams.isSortBy('distributed_system_name','asc'),
+				'sort-asc':tableParams.isSortBy('distributed_system_name','desc')
+			}" ng-click="tableParams.sorting({'distributed_system_name',tableParams.isSortBy('distributed_system_name','asc') ? 'desc':'asc')})">
+				<div>
+				Target System
+				</div>
+				</th>
+				<th class="sortable" ng-class="{
+            'sort-asc': tableParams.isSortBy('os_name', 'asc'),
+            'sort-desc': tableParams.isSortBy('os_name', 'desc')
+          }" ng-click="tableParams.sorting({'os_name' : tableParams.isSortBy('os_name', 'asc') ? 'desc' : 'asc'})">
+                    <div>
+                        OS
+                    </div>
+                </th>
+                <th class="sortable" ng-class="{
+            'sort-asc': tableParams.isSortBy('updated_at', 'asc'),
+            'sort-desc': tableParams.isSortBy('updated_at', 'desc')
+          }" ng-click="tableParams.sorting({'updated_at' : tableParams.isSortBy('updated_at', 'asc') ? 'desc' : 'asc'})">
+                    <div>
+                        Date Modified
+                    </div>
+                </th>
+                <th>Action</th>
+               </tr>
+           </thead>
+           <tbody>
+           	 <tr ng-repeat="cluster in $data | filter:search">
+           	 	<td sortable ="'name'">
+           	 		<span ng-if="cluster.name== 'UNINITIALIZED'">
+           	 			<a ui-sref="wizard({id:cluster.id,config:true})"> {{cluster.name}}</a>
+           	 		</span>
+           	 	</td>
+           	 	<td sortable="'state'">
+           	 		<span ng-if="cluster.state!='UNINITIALIZED'">
+           	 			<a ui-sref="cluster.overview({id:cluster.id})">{{cluster.name}}</a>
+           	 			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+           	 			
+
+
+

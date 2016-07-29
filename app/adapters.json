@@ -1,0 +1,2340 @@
+[
+    {
+        "flavors": [
+            {
+                "display_name": "Single Controller",
+                "name": "single-controller",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "network node",
+                        "description": "Network Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:network",
+                        "name": "network"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "storage node",
+                        "description": "Storage Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:storage",
+                        "name": "storage"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:single-controller",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:onos",
+                        "name": "onos"
+                    }
+                ],
+                "adapter_id": "openstack_mitaka",
+                "adapter_name": "openstack_mitaka",
+                "template": "single-controller.tmpl",
+                "id": "openstack_mitaka:single-controller"
+            },
+            {
+                "display_name": "Multi-nodes",
+                "name": "multinodes",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "Compute controller node",
+                        "description": "Compute controller node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:compute-controller",
+                        "name": "compute-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "Compute worker node",
+                        "description": "Compute worker node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:compute-worker",
+                        "name": "compute-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "Network server node",
+                        "description": "Network server node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:network-server",
+                        "name": "network-server"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "network-worker",
+                        "description": "Network worker node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:network-worker",
+                        "name": "network-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "Database node",
+                        "description": "Database node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:database",
+                        "name": "database"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "Messaging queue node",
+                        "description": "Messaging queue node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:messaging",
+                        "name": "messaging"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "image",
+                        "description": "Image node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:image",
+                        "name": "image"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "dashboard",
+                        "description": "Dashboard node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:dashboard",
+                        "name": "dashboard"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "identity",
+                        "description": "Identity node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:identity",
+                        "name": "identity"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "storage-controller",
+                        "description": "Storage controller node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:storage-controller",
+                        "name": "storage-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:multinodes",
+                        "display_name": "storage-volume",
+                        "description": "Storage volume node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:storage-volume",
+                        "name": "storage-volume"
+                    }
+                ],
+                "adapter_id": "openstack_mitaka",
+                "adapter_name": "openstack_mitaka",
+                "template": "multinodes.tmpl",
+                "id": "openstack_mitaka:multinodes"
+            },
+            {
+                "display_name": "All-In-One",
+                "name": "allinone",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_mitaka:allinone",
+                        "display_name": "all in one",
+                        "description": "All in One",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:allinone-compute",
+                        "name": "allinone-compute"
+                    }
+                ],
+                "adapter_id": "openstack_mitaka",
+                "adapter_name": "openstack_mitaka",
+                "template": "allinone.tmpl",
+                "id": "openstack_mitaka:allinone"
+            },
+            {
+                "display_name": "HA-ansible-multinodes-mitaka",
+                "name": "HA-ansible-multinodes-mitaka",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ha",
+                        "description": "Cluster with HA node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": false,
+                        "id": "openstack_mitaka:ha",
+                        "name": "ha"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:onos",
+                        "name": "onos"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "opencontrail",
+                        "description": "opencontrail node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:opencontrail",
+                        "name": "opencontrail"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ceph",
+                        "description": "ceph node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:ceph",
+                        "name": "ceph"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ceph-adm",
+                        "description": "Ceph Admin Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:ceph-adm",
+                        "name": "ceph-adm"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ceph-mon",
+                        "description": "Ceph Monitor Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:ceph-mon",
+                        "name": "ceph-mon"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ceph-osd",
+                        "description": "Ceph Storage Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:ceph-osd",
+                        "name": "ceph-osd"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "sec-patch",
+                        "description": "Security Patch Node",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:sec-patch",
+                        "name": "sec-patch"
+                    },
+                    {
+                        "flavor_id": "openstack_mitaka:HA-ansible-multinodes-mitaka",
+                        "display_name": "ceph-osd-node",
+                        "description": "",
+                        "adapter_id": "openstack_mitaka",
+                        "adapter_name": "openstack_mitaka",
+                        "optional": true,
+                        "id": "openstack_mitaka:ceph-osd-node",
+                        "name": "ceph-osd-node"
+                    }
+                ],
+                "adapter_id": "openstack_mitaka",
+                "adapter_name": "openstack_mitaka",
+                "template": "HA-ansible-multinodes.tmpl",
+                "id": "openstack_mitaka:HA-ansible-multinodes-mitaka"
+            }
+        ],
+        "package_installer": {
+            "alias": "ansible_installer_mitaka",
+            "settings": {
+                "ansible_run_dir": "/var/ansible/run",
+                "inventory_file": "inventory.yml",
+                "ansible_dir": "/var/ansible",
+                "runner_dirs": [
+                    "roles",
+                    "openstack_mitaka/templates",
+                    "openstack_mitaka/roles"
+                ],
+                "ansible_config": "ansible.cfg",
+                "group_variable": "all",
+                "playbook_file": "site.yml",
+                "etc_hosts_path": "roles/common/templates/hosts"
+            },
+            "id": "ansible_installer_mitaka",
+            "name": "ansible_installer"
+        },
+        "name": "openstack_mitaka",
+        "roles": [
+            {
+                "optional": false,
+                "description": "All in One",
+                "display_name": "all in one",
+                "id": "openstack_mitaka:allinone-compute",
+                "name": "allinone-compute"
+            },
+            {
+                "optional": false,
+                "description": "Image node",
+                "display_name": "image",
+                "id": "openstack_mitaka:image",
+                "name": "image"
+            },
+            {
+                "optional": true,
+                "description": "ceph node",
+                "display_name": "ceph",
+                "id": "openstack_mitaka:ceph",
+                "name": "ceph"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Admin Node",
+                "display_name": "ceph-adm",
+                "id": "openstack_mitaka:ceph-adm",
+                "name": "ceph-adm"
+            },
+            {
+                "optional": true,
+                "description": "odl node",
+                "display_name": "odl",
+                "id": "openstack_mitaka:odl",
+                "name": "odl"
+            },
+            {
+                "optional": false,
+                "description": "Network worker node",
+                "display_name": "network-worker",
+                "id": "openstack_mitaka:network-worker",
+                "name": "network-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage controller node",
+                "display_name": "storage-controller",
+                "id": "openstack_mitaka:storage-controller",
+                "name": "storage-controller"
+            },
+            {
+                "optional": true,
+                "description": "Security Patch Node",
+                "display_name": "sec-patch",
+                "id": "openstack_mitaka:sec-patch",
+                "name": "sec-patch"
+            },
+            {
+                "optional": false,
+                "description": "Network Node",
+                "display_name": "network node",
+                "id": "openstack_mitaka:network",
+                "name": "network"
+            },
+            {
+                "optional": false,
+                "description": "Compute controller node",
+                "display_name": "Compute controller node",
+                "id": "openstack_mitaka:compute-controller",
+                "name": "compute-controller"
+            },
+            {
+                "optional": false,
+                "description": "Compute worker node",
+                "display_name": "Compute worker node",
+                "id": "openstack_mitaka:compute-worker",
+                "name": "compute-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage Node",
+                "display_name": "storage node",
+                "id": "openstack_mitaka:storage",
+                "name": "storage"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Monitor Node",
+                "display_name": "ceph-mon",
+                "id": "openstack_mitaka:ceph-mon",
+                "name": "ceph-mon"
+            },
+            {
+                "optional": false,
+                "description": "Storage volume node",
+                "display_name": "storage-volume",
+                "id": "openstack_mitaka:storage-volume",
+                "name": "storage-volume"
+            },
+            {
+                "optional": false,
+                "description": "Controller Node",
+                "display_name": "controller node",
+                "id": "openstack_mitaka:controller",
+                "name": "controller"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Storage Node",
+                "display_name": "ceph-osd",
+                "id": "openstack_mitaka:ceph-osd",
+                "name": "ceph-osd"
+            },
+            {
+                "optional": false,
+                "description": "Cluster with HA node",
+                "display_name": "ha",
+                "id": "openstack_mitaka:ha",
+                "name": "ha"
+            },
+            {
+                "optional": false,
+                "description": "Network server node",
+                "display_name": "Network server node",
+                "id": "openstack_mitaka:network-server",
+                "name": "network-server"
+            },
+            {
+                "optional": false,
+                "description": "Identity node",
+                "display_name": "identity",
+                "id": "openstack_mitaka:identity",
+                "name": "identity"
+            },
+            {
+                "optional": true,
+                "description": "",
+                "display_name": "ceph-osd-node",
+                "id": "openstack_mitaka:ceph-osd-node",
+                "name": "ceph-osd-node"
+            },
+            {
+                "optional": false,
+                "description": "Compute Node",
+                "display_name": "compute node",
+                "id": "openstack_mitaka:compute",
+                "name": "compute"
+            },
+            {
+                "optional": true,
+                "description": "onos node",
+                "display_name": "onos",
+                "id": "openstack_mitaka:onos",
+                "name": "onos"
+            },
+            {
+                "optional": false,
+                "description": "Database node",
+                "display_name": "Database node",
+                "id": "openstack_mitaka:database",
+                "name": "database"
+            },
+            {
+                "optional": true,
+                "description": "opencontrail node",
+                "display_name": "opencontrail",
+                "id": "openstack_mitaka:opencontrail",
+                "name": "opencontrail"
+            },
+            {
+                "optional": false,
+                "description": "Dashboard node",
+                "display_name": "dashboard",
+                "id": "openstack_mitaka:dashboard",
+                "name": "dashboard"
+            },
+            {
+                "optional": false,
+                "description": "Messaging queue node",
+                "display_name": "Messaging queue node",
+                "id": "openstack_mitaka:messaging",
+                "name": "messaging"
+            }
+        ],
+        "os_installer": {
+            "alias": "cobbler",
+            "settings": {
+                "credentials": {
+                    "username": "cobbler",
+                    "password": "cobbler"
+                },
+                "cobbler_url": "http://10.145.250.56/cobbler_api"
+            },
+            "id": "cobbler",
+            "name": "cobbler"
+        },
+        "supported_oses": [
+            {
+                "os_id": "CentOS-7-Minimal-1511-x86_64",
+                "id": "CentOS-7-Minimal-1511-x86_64",
+                "name": "CentOS-7-Minimal-1511-x86_64"
+            },
+            {
+                "os_id": "ubuntu-14.04.3-server-x86_64",
+                "id": "ubuntu-14.04.3-server-x86_64",
+                "name": "ubuntu-14.04.3-server-x86_64"
+            }
+        ],
+        "display_name": "Openstack Mitaka",
+        "id": "openstack_mitaka"
+    },
+    {
+        "flavors": [
+            {
+                "display_name": "Single Controller",
+                "name": "single-controller",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "network node",
+                        "description": "Network Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:network",
+                        "name": "network"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "storage node",
+                        "description": "Storage Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:storage",
+                        "name": "storage"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:single-controller",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:onos",
+                        "name": "onos"
+                    }
+                ],
+                "adapter_id": "openstack_juno",
+                "adapter_name": "openstack_juno",
+                "template": "single-controller.tmpl",
+                "id": "openstack_juno:single-controller"
+            },
+            {
+                "display_name": "Multi-nodes",
+                "name": "multinodes",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "Compute controller node",
+                        "description": "Compute controller node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:compute-controller",
+                        "name": "compute-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "Compute worker node",
+                        "description": "Compute worker node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:compute-worker",
+                        "name": "compute-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "Network server node",
+                        "description": "Network server node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:network-server",
+                        "name": "network-server"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "network-worker",
+                        "description": "Network worker node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:network-worker",
+                        "name": "network-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "Database node",
+                        "description": "Database node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:database",
+                        "name": "database"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "Messaging queue node",
+                        "description": "Messaging queue node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:messaging",
+                        "name": "messaging"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "image",
+                        "description": "Image node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:image",
+                        "name": "image"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "dashboard",
+                        "description": "Dashboard node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:dashboard",
+                        "name": "dashboard"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "identity",
+                        "description": "Identity node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:identity",
+                        "name": "identity"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "storage-controller",
+                        "description": "Storage controller node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:storage-controller",
+                        "name": "storage-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:multinodes",
+                        "display_name": "storage-volume",
+                        "description": "Storage volume node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:storage-volume",
+                        "name": "storage-volume"
+                    }
+                ],
+                "adapter_id": "openstack_juno",
+                "adapter_name": "openstack_juno",
+                "template": "multinodes.tmpl",
+                "id": "openstack_juno:multinodes"
+            },
+            {
+                "display_name": "All-In-One",
+                "name": "allinone",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_juno:allinone",
+                        "display_name": "all in one",
+                        "description": "All in One",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:allinone-compute",
+                        "name": "allinone-compute"
+                    }
+                ],
+                "adapter_id": "openstack_juno",
+                "adapter_name": "openstack_juno",
+                "template": "allinone.tmpl",
+                "id": "openstack_juno:allinone"
+            },
+            {
+                "display_name": "HA-ansible-multinodes-juno",
+                "name": "HA-ansible-multinodes-juno",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ha",
+                        "description": "Cluster with HA node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": false,
+                        "id": "openstack_juno:ha",
+                        "name": "ha"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:onos",
+                        "name": "onos"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ceph",
+                        "description": "ceph node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:ceph",
+                        "name": "ceph"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ceph-adm",
+                        "description": "Ceph Admin Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:ceph-adm",
+                        "name": "ceph-adm"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ceph-mon",
+                        "description": "Ceph Monitor Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:ceph-mon",
+                        "name": "ceph-mon"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ceph-osd",
+                        "description": "Ceph Storage Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:ceph-osd",
+                        "name": "ceph-osd"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "sec-patch",
+                        "description": "Security Patch Node",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:sec-patch",
+                        "name": "sec-patch"
+                    },
+                    {
+                        "flavor_id": "openstack_juno:HA-ansible-multinodes-juno",
+                        "display_name": "ceph-osd-node",
+                        "description": "",
+                        "adapter_id": "openstack_juno",
+                        "adapter_name": "openstack_juno",
+                        "optional": true,
+                        "id": "openstack_juno:ceph-osd-node",
+                        "name": "ceph-osd-node"
+                    }
+                ],
+                "adapter_id": "openstack_juno",
+                "adapter_name": "openstack_juno",
+                "template": "HA-ansible-multinodes.tmpl",
+                "id": "openstack_juno:HA-ansible-multinodes-juno"
+            }
+        ],
+        "package_installer": {
+            "alias": "ansible_installer_juno",
+            "settings": {
+                "ansible_run_dir": "/var/ansible/run",
+                "inventory_file": "inventory.yml",
+                "ansible_dir": "/var/ansible",
+                "runner_dirs": [
+                    "roles",
+                    "openstack_juno/templates",
+                    "openstack_juno/roles"
+                ],
+                "ansible_config": "ansible.cfg",
+                "group_variable": "all",
+                "playbook_file": "site.yml",
+                "etc_hosts_path": "roles/common/templates/hosts"
+            },
+            "id": "ansible_installer_juno",
+            "name": "ansible_installer"
+        },
+        "name": "openstack_juno",
+        "roles": [
+            {
+                "optional": false,
+                "description": "Image node",
+                "display_name": "image",
+                "id": "openstack_juno:image",
+                "name": "image"
+            },
+            {
+                "optional": true,
+                "description": "ceph node",
+                "display_name": "ceph",
+                "id": "openstack_juno:ceph",
+                "name": "ceph"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Admin Node",
+                "display_name": "ceph-adm",
+                "id": "openstack_juno:ceph-adm",
+                "name": "ceph-adm"
+            },
+            {
+                "optional": true,
+                "description": "odl node",
+                "display_name": "odl",
+                "id": "openstack_juno:odl",
+                "name": "odl"
+            },
+            {
+                "optional": false,
+                "description": "Network worker node",
+                "display_name": "network-worker",
+                "id": "openstack_juno:network-worker",
+                "name": "network-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage controller node",
+                "display_name": "storage-controller",
+                "id": "openstack_juno:storage-controller",
+                "name": "storage-controller"
+            },
+            {
+                "optional": true,
+                "description": "Security Patch Node",
+                "display_name": "sec-patch",
+                "id": "openstack_juno:sec-patch",
+                "name": "sec-patch"
+            },
+            {
+                "optional": false,
+                "description": "Network Node",
+                "display_name": "network node",
+                "id": "openstack_juno:network",
+                "name": "network"
+            },
+            {
+                "optional": false,
+                "description": "Compute controller node",
+                "display_name": "Compute controller node",
+                "id": "openstack_juno:compute-controller",
+                "name": "compute-controller"
+            },
+            {
+                "optional": false,
+                "description": "Compute worker node",
+                "display_name": "Compute worker node",
+                "id": "openstack_juno:compute-worker",
+                "name": "compute-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage Node",
+                "display_name": "storage node",
+                "id": "openstack_juno:storage",
+                "name": "storage"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Monitor Node",
+                "display_name": "ceph-mon",
+                "id": "openstack_juno:ceph-mon",
+                "name": "ceph-mon"
+            },
+            {
+                "optional": false,
+                "description": "Storage volume node",
+                "display_name": "storage-volume",
+                "id": "openstack_juno:storage-volume",
+                "name": "storage-volume"
+            },
+            {
+                "optional": false,
+                "description": "Controller Node",
+                "display_name": "controller node",
+                "id": "openstack_juno:controller",
+                "name": "controller"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Storage Node",
+                "display_name": "ceph-osd",
+                "id": "openstack_juno:ceph-osd",
+                "name": "ceph-osd"
+            },
+            {
+                "optional": false,
+                "description": "Cluster with HA node",
+                "display_name": "ha",
+                "id": "openstack_juno:ha",
+                "name": "ha"
+            },
+            {
+                "optional": false,
+                "description": "Network server node",
+                "display_name": "Network server node",
+                "id": "openstack_juno:network-server",
+                "name": "network-server"
+            },
+            {
+                "optional": false,
+                "description": "Identity node",
+                "display_name": "identity",
+                "id": "openstack_juno:identity",
+                "name": "identity"
+            },
+            {
+                "optional": true,
+                "description": "",
+                "display_name": "ceph-osd-node",
+                "id": "openstack_juno:ceph-osd-node",
+                "name": "ceph-osd-node"
+            },
+            {
+                "optional": false,
+                "description": "Compute Node",
+                "display_name": "compute node",
+                "id": "openstack_juno:compute",
+                "name": "compute"
+            },
+            {
+                "optional": true,
+                "description": "onos node",
+                "display_name": "onos",
+                "id": "openstack_juno:onos",
+                "name": "onos"
+            },
+            {
+                "optional": false,
+                "description": "Database node",
+                "display_name": "Database node",
+                "id": "openstack_juno:database",
+                "name": "database"
+            },
+            {
+                "optional": false,
+                "description": "All in One",
+                "display_name": "all in one",
+                "id": "openstack_juno:allinone-compute",
+                "name": "allinone-compute"
+            },
+            {
+                "optional": false,
+                "description": "Dashboard node",
+                "display_name": "dashboard",
+                "id": "openstack_juno:dashboard",
+                "name": "dashboard"
+            },
+            {
+                "optional": false,
+                "description": "Messaging queue node",
+                "display_name": "Messaging queue node",
+                "id": "openstack_juno:messaging",
+                "name": "messaging"
+            }
+        ],
+        "os_installer": {
+            "alias": "cobbler",
+            "settings": {
+                "credentials": {
+                    "username": "cobbler",
+                    "password": "cobbler"
+                },
+                "cobbler_url": "http://10.145.250.56/cobbler_api"
+            },
+            "id": "cobbler",
+            "name": "cobbler"
+        },
+        "supported_oses": [
+            {
+                "os_id": "CentOS-7-Minimal-1511-x86_64",
+                "id": "CentOS-7-Minimal-1511-x86_64",
+                "name": "CentOS-7-Minimal-1511-x86_64"
+            },
+            {
+                "os_id": "ubuntu-14.04.3-server-x86_64",
+                "id": "ubuntu-14.04.3-server-x86_64",
+                "name": "ubuntu-14.04.3-server-x86_64"
+            }
+        ],
+        "display_name": "Openstack Juno",
+        "id": "openstack_juno"
+    },
+    {
+        "flavors": [],
+        "display_name": "os_only",
+        "name": "os_only",
+        "roles": [],
+        "os_installer": {
+            "alias": "cobbler",
+            "settings": {
+                "credentials": {
+                    "username": "cobbler",
+                    "password": "cobbler"
+                },
+                "cobbler_url": "http://10.145.250.56/cobbler_api"
+            },
+            "id": "cobbler",
+            "name": "cobbler"
+        },
+        "supported_oses": [
+            {
+                "os_id": "CentOS-6.6-x86_64",
+                "id": "CentOS-6.6-x86_64",
+                "name": "CentOS-6.6-x86_64"
+            },
+            {
+                "os_id": "Ubuntu-12.04-x86_64",
+                "id": "Ubuntu-12.04-x86_64",
+                "name": "Ubuntu-12.04-x86_64"
+            },
+            {
+                "os_id": "CentOS-7-Minimal-1511-x86_64",
+                "id": "CentOS-7-Minimal-1511-x86_64",
+                "name": "CentOS-7-Minimal-1511-x86_64"
+            },
+            {
+                "os_id": "CentOS-6.5-x86_64",
+                "id": "CentOS-6.5-x86_64",
+                "name": "CentOS-6.5-x86_64"
+            },
+            {
+                "os_id": "ubuntu-14.04.3-server-x86_64",
+                "id": "ubuntu-14.04.3-server-x86_64",
+                "name": "ubuntu-14.04.3-server-x86_64"
+            },
+            {
+                "os_id": "sles-11sp3-x86_64",
+                "id": "sles-11sp3-x86_64",
+                "name": "sles-11sp3-x86_64"
+            },
+            {
+                "os_id": "uvp-11sp3-x86_64",
+                "id": "uvp-11sp3-x86_64",
+                "name": "uvp-11sp3-x86_64"
+            }
+        ],
+        "id": "os_only"
+    },
+    {
+        "flavors": [
+            {
+                "display_name": "Single Controller",
+                "name": "single-controller",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "network node",
+                        "description": "Network Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:network",
+                        "name": "network"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "storage node",
+                        "description": "Storage Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:storage",
+                        "name": "storage"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:single-controller",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:onos",
+                        "name": "onos"
+                    }
+                ],
+                "adapter_id": "openstack_liberty",
+                "adapter_name": "openstack_liberty",
+                "template": "single-controller.tmpl",
+                "id": "openstack_liberty:single-controller"
+            },
+            {
+                "display_name": "Multi-nodes",
+                "name": "multinodes",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "Compute controller node",
+                        "description": "Compute controller node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:compute-controller",
+                        "name": "compute-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "Compute worker node",
+                        "description": "Compute worker node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:compute-worker",
+                        "name": "compute-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "Network server node",
+                        "description": "Network server node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:network-server",
+                        "name": "network-server"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "network-worker",
+                        "description": "Network worker node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:network-worker",
+                        "name": "network-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "Database node",
+                        "description": "Database node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:database",
+                        "name": "database"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "Messaging queue node",
+                        "description": "Messaging queue node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:messaging",
+                        "name": "messaging"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "image",
+                        "description": "Image node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:image",
+                        "name": "image"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "dashboard",
+                        "description": "Dashboard node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:dashboard",
+                        "name": "dashboard"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "identity",
+                        "description": "Identity node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:identity",
+                        "name": "identity"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "storage-controller",
+                        "description": "Storage controller node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:storage-controller",
+                        "name": "storage-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:multinodes",
+                        "display_name": "storage-volume",
+                        "description": "Storage volume node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:storage-volume",
+                        "name": "storage-volume"
+                    }
+                ],
+                "adapter_id": "openstack_liberty",
+                "adapter_name": "openstack_liberty",
+                "template": "multinodes.tmpl",
+                "id": "openstack_liberty:multinodes"
+            },
+            {
+                "display_name": "All-In-One",
+                "name": "allinone",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_liberty:allinone",
+                        "display_name": "all in one",
+                        "description": "All in One",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:allinone-compute",
+                        "name": "allinone-compute"
+                    }
+                ],
+                "adapter_id": "openstack_liberty",
+                "adapter_name": "openstack_liberty",
+                "template": "allinone.tmpl",
+                "id": "openstack_liberty:allinone"
+            },
+            {
+                "display_name": "HA-ansible-multinodes-liberty",
+                "name": "HA-ansible-multinodes-liberty",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ha",
+                        "description": "Cluster with HA node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": false,
+                        "id": "openstack_liberty:ha",
+                        "name": "ha"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:onos",
+                        "name": "onos"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "opencontrail",
+                        "description": "opencontrail node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:opencontrail",
+                        "name": "opencontrail"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ceph",
+                        "description": "ceph node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:ceph",
+                        "name": "ceph"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ceph-adm",
+                        "description": "Ceph Admin Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:ceph-adm",
+                        "name": "ceph-adm"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ceph-mon",
+                        "description": "Ceph Monitor Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:ceph-mon",
+                        "name": "ceph-mon"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ceph-osd",
+                        "description": "Ceph Storage Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:ceph-osd",
+                        "name": "ceph-osd"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "sec-patch",
+                        "description": "Security Patch Node",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:sec-patch",
+                        "name": "sec-patch"
+                    },
+                    {
+                        "flavor_id": "openstack_liberty:HA-ansible-multinodes-liberty",
+                        "display_name": "ceph-osd-node",
+                        "description": "",
+                        "adapter_id": "openstack_liberty",
+                        "adapter_name": "openstack_liberty",
+                        "optional": true,
+                        "id": "openstack_liberty:ceph-osd-node",
+                        "name": "ceph-osd-node"
+                    }
+                ],
+                "adapter_id": "openstack_liberty",
+                "adapter_name": "openstack_liberty",
+                "template": "HA-ansible-multinodes.tmpl",
+                "id": "openstack_liberty:HA-ansible-multinodes-liberty"
+            }
+        ],
+        "package_installer": {
+            "alias": "ansible_installer_liberty",
+            "settings": {
+                "ansible_run_dir": "/var/ansible/run",
+                "inventory_file": "inventory.yml",
+                "ansible_dir": "/var/ansible",
+                "runner_dirs": [
+                    "roles",
+                    "openstack_liberty/templates",
+                    "openstack_liberty/roles"
+                ],
+                "ansible_config": "ansible.cfg",
+                "group_variable": "all",
+                "playbook_file": "site.yml",
+                "etc_hosts_path": "roles/common/templates/hosts"
+            },
+            "id": "ansible_installer_liberty",
+            "name": "ansible_installer"
+        },
+        "name": "openstack_liberty",
+        "roles": [
+            {
+                "optional": false,
+                "description": "All in One",
+                "display_name": "all in one",
+                "id": "openstack_liberty:allinone-compute",
+                "name": "allinone-compute"
+            },
+            {
+                "optional": false,
+                "description": "Image node",
+                "display_name": "image",
+                "id": "openstack_liberty:image",
+                "name": "image"
+            },
+            {
+                "optional": true,
+                "description": "ceph node",
+                "display_name": "ceph",
+                "id": "openstack_liberty:ceph",
+                "name": "ceph"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Admin Node",
+                "display_name": "ceph-adm",
+                "id": "openstack_liberty:ceph-adm",
+                "name": "ceph-adm"
+            },
+            {
+                "optional": true,
+                "description": "odl node",
+                "display_name": "odl",
+                "id": "openstack_liberty:odl",
+                "name": "odl"
+            },
+            {
+                "optional": false,
+                "description": "Network worker node",
+                "display_name": "network-worker",
+                "id": "openstack_liberty:network-worker",
+                "name": "network-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage controller node",
+                "display_name": "storage-controller",
+                "id": "openstack_liberty:storage-controller",
+                "name": "storage-controller"
+            },
+            {
+                "optional": true,
+                "description": "Security Patch Node",
+                "display_name": "sec-patch",
+                "id": "openstack_liberty:sec-patch",
+                "name": "sec-patch"
+            },
+            {
+                "optional": false,
+                "description": "Network Node",
+                "display_name": "network node",
+                "id": "openstack_liberty:network",
+                "name": "network"
+            },
+            {
+                "optional": false,
+                "description": "Compute controller node",
+                "display_name": "Compute controller node",
+                "id": "openstack_liberty:compute-controller",
+                "name": "compute-controller"
+            },
+            {
+                "optional": false,
+                "description": "Compute worker node",
+                "display_name": "Compute worker node",
+                "id": "openstack_liberty:compute-worker",
+                "name": "compute-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage Node",
+                "display_name": "storage node",
+                "id": "openstack_liberty:storage",
+                "name": "storage"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Monitor Node",
+                "display_name": "ceph-mon",
+                "id": "openstack_liberty:ceph-mon",
+                "name": "ceph-mon"
+            },
+            {
+                "optional": false,
+                "description": "Storage volume node",
+                "display_name": "storage-volume",
+                "id": "openstack_liberty:storage-volume",
+                "name": "storage-volume"
+            },
+            {
+                "optional": false,
+                "description": "Controller Node",
+                "display_name": "controller node",
+                "id": "openstack_liberty:controller",
+                "name": "controller"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Storage Node",
+                "display_name": "ceph-osd",
+                "id": "openstack_liberty:ceph-osd",
+                "name": "ceph-osd"
+            },
+            {
+                "optional": false,
+                "description": "Cluster with HA node",
+                "display_name": "ha",
+                "id": "openstack_liberty:ha",
+                "name": "ha"
+            },
+            {
+                "optional": false,
+                "description": "Network server node",
+                "display_name": "Network server node",
+                "id": "openstack_liberty:network-server",
+                "name": "network-server"
+            },
+            {
+                "optional": false,
+                "description": "Identity node",
+                "display_name": "identity",
+                "id": "openstack_liberty:identity",
+                "name": "identity"
+            },
+            {
+                "optional": true,
+                "description": "",
+                "display_name": "ceph-osd-node",
+                "id": "openstack_liberty:ceph-osd-node",
+                "name": "ceph-osd-node"
+            },
+            {
+                "optional": false,
+                "description": "Compute Node",
+                "display_name": "compute node",
+                "id": "openstack_liberty:compute",
+                "name": "compute"
+            },
+            {
+                "optional": true,
+                "description": "onos node",
+                "display_name": "onos",
+                "id": "openstack_liberty:onos",
+                "name": "onos"
+            },
+            {
+                "optional": false,
+                "description": "Database node",
+                "display_name": "Database node",
+                "id": "openstack_liberty:database",
+                "name": "database"
+            },
+            {
+                "optional": true,
+                "description": "opencontrail node",
+                "display_name": "opencontrail",
+                "id": "openstack_liberty:opencontrail",
+                "name": "opencontrail"
+            },
+            {
+                "optional": false,
+                "description": "Dashboard node",
+                "display_name": "dashboard",
+                "id": "openstack_liberty:dashboard",
+                "name": "dashboard"
+            },
+            {
+                "optional": false,
+                "description": "Messaging queue node",
+                "display_name": "Messaging queue node",
+                "id": "openstack_liberty:messaging",
+                "name": "messaging"
+            }
+        ],
+        "os_installer": {
+            "alias": "cobbler",
+            "settings": {
+                "credentials": {
+                    "username": "cobbler",
+                    "password": "cobbler"
+                },
+                "cobbler_url": "http://10.145.250.56/cobbler_api"
+            },
+            "id": "cobbler",
+            "name": "cobbler"
+        },
+        "supported_oses": [
+            {
+                "os_id": "CentOS-7-Minimal-1511-x86_64",
+                "id": "CentOS-7-Minimal-1511-x86_64",
+                "name": "CentOS-7-Minimal-1511-x86_64"
+            },
+            {
+                "os_id": "ubuntu-14.04.3-server-x86_64",
+                "id": "ubuntu-14.04.3-server-x86_64",
+                "name": "ubuntu-14.04.3-server-x86_64"
+            }
+        ],
+        "display_name": "Openstack Liberty",
+        "id": "openstack_liberty"
+    },
+    {
+        "flavors": [
+            {
+                "display_name": "Single Controller",
+                "name": "single-controller",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "network node",
+                        "description": "Network Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:network",
+                        "name": "network"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "storage node",
+                        "description": "Storage Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:storage",
+                        "name": "storage"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:single-controller",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:onos",
+                        "name": "onos"
+                    }
+                ],
+                "adapter_id": "openstack_kilo",
+                "adapter_name": "openstack_kilo",
+                "template": "single-controller.tmpl",
+                "id": "openstack_kilo:single-controller"
+            },
+            {
+                "display_name": "Multi-nodes",
+                "name": "multinodes",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "Compute controller node",
+                        "description": "Compute controller node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:compute-controller",
+                        "name": "compute-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "Compute worker node",
+                        "description": "Compute worker node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:compute-worker",
+                        "name": "compute-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "Network server node",
+                        "description": "Network server node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:network-server",
+                        "name": "network-server"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "network-worker",
+                        "description": "Network worker node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:network-worker",
+                        "name": "network-worker"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "Database node",
+                        "description": "Database node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:database",
+                        "name": "database"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "Messaging queue node",
+                        "description": "Messaging queue node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:messaging",
+                        "name": "messaging"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "image",
+                        "description": "Image node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:image",
+                        "name": "image"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "dashboard",
+                        "description": "Dashboard node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:dashboard",
+                        "name": "dashboard"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "identity",
+                        "description": "Identity node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:identity",
+                        "name": "identity"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "storage-controller",
+                        "description": "Storage controller node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:storage-controller",
+                        "name": "storage-controller"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:multinodes",
+                        "display_name": "storage-volume",
+                        "description": "Storage volume node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:storage-volume",
+                        "name": "storage-volume"
+                    }
+                ],
+                "adapter_id": "openstack_kilo",
+                "adapter_name": "openstack_kilo",
+                "template": "multinodes.tmpl",
+                "id": "openstack_kilo:multinodes"
+            },
+            {
+                "display_name": "HA-ansible-multinodes-kilo",
+                "name": "HA-ansible-multinodes-kilo",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "controller node",
+                        "description": "Controller Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:controller",
+                        "name": "controller"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "compute node",
+                        "description": "Compute Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:compute",
+                        "name": "compute"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "ha",
+                        "description": "Cluster with HA node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:ha",
+                        "name": "ha"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "odl",
+                        "description": "odl node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:odl",
+                        "name": "odl"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "onos",
+                        "description": "onos node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:onos",
+                        "name": "onos"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "ceph",
+                        "description": "ceph node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:ceph",
+                        "name": "ceph"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "ceph-adm",
+                        "description": "Ceph Admin Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:ceph-adm",
+                        "name": "ceph-adm"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "ceph-mon",
+                        "description": "Ceph Monitor Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:ceph-mon",
+                        "name": "ceph-mon"
+                    },
+                    {
+                        "flavor_id": "openstack_kilo:HA-ansible-multinodes-kilo",
+                        "display_name": "ceph-osd",
+                        "description": "Ceph Storage Node",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": true,
+                        "id": "openstack_kilo:ceph-osd",
+                        "name": "ceph-osd"
+                    }
+                ],
+                "adapter_id": "openstack_kilo",
+                "adapter_name": "openstack_kilo",
+                "template": "HA-ansible-multinodes.tmpl",
+                "id": "openstack_kilo:HA-ansible-multinodes-kilo"
+            },
+            {
+                "display_name": "All-In-One",
+                "name": "allinone",
+                "roles": [
+                    {
+                        "flavor_id": "openstack_kilo:allinone",
+                        "display_name": "all in one",
+                        "description": "All in One",
+                        "adapter_id": "openstack_kilo",
+                        "adapter_name": "openstack_kilo",
+                        "optional": false,
+                        "id": "openstack_kilo:allinone-compute",
+                        "name": "allinone-compute"
+                    }
+                ],
+                "adapter_id": "openstack_kilo",
+                "adapter_name": "openstack_kilo",
+                "template": "allinone.tmpl",
+                "id": "openstack_kilo:allinone"
+            }
+        ],
+        "package_installer": {
+            "alias": "ansible_installer_kilo",
+            "settings": {
+                "ansible_run_dir": "/var/ansible/run",
+                "inventory_file": "inventory.yml",
+                "ansible_dir": "/var/ansible",
+                "runner_dirs": [
+                    "roles",
+                    "openstack_kilo/templates",
+                    "openstack_kilo/roles"
+                ],
+                "ansible_config": "ansible.cfg",
+                "group_variable": "all",
+                "playbook_file": "site.yml",
+                "etc_hosts_path": "roles/common/templates/hosts"
+            },
+            "id": "ansible_installer_kilo",
+            "name": "ansible_installer"
+        },
+        "name": "openstack_kilo",
+        "roles": [
+            {
+                "optional": false,
+                "description": "Image node",
+                "display_name": "image",
+                "id": "openstack_kilo:image",
+                "name": "image"
+            },
+            {
+                "optional": true,
+                "description": "ceph node",
+                "display_name": "ceph",
+                "id": "openstack_kilo:ceph",
+                "name": "ceph"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Admin Node",
+                "display_name": "ceph-adm",
+                "id": "openstack_kilo:ceph-adm",
+                "name": "ceph-adm"
+            },
+            {
+                "optional": true,
+                "description": "odl node",
+                "display_name": "odl",
+                "id": "openstack_kilo:odl",
+                "name": "odl"
+            },
+            {
+                "optional": false,
+                "description": "Network worker node",
+                "display_name": "network-worker",
+                "id": "openstack_kilo:network-worker",
+                "name": "network-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage controller node",
+                "display_name": "storage-controller",
+                "id": "openstack_kilo:storage-controller",
+                "name": "storage-controller"
+            },
+            {
+                "optional": true,
+                "description": "Security Patch Node",
+                "display_name": "sec-patch",
+                "id": "openstack_kilo:sec-patch",
+                "name": "sec-patch"
+            },
+            {
+                "optional": false,
+                "description": "Network Node",
+                "display_name": "network node",
+                "id": "openstack_kilo:network",
+                "name": "network"
+            },
+            {
+                "optional": false,
+                "description": "Compute controller node",
+                "display_name": "Compute controller node",
+                "id": "openstack_kilo:compute-controller",
+                "name": "compute-controller"
+            },
+            {
+                "optional": false,
+                "description": "Compute worker node",
+                "display_name": "Compute worker node",
+                "id": "openstack_kilo:compute-worker",
+                "name": "compute-worker"
+            },
+            {
+                "optional": false,
+                "description": "Storage Node",
+                "display_name": "storage node",
+                "id": "openstack_kilo:storage",
+                "name": "storage"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Monitor Node",
+                "display_name": "ceph-mon",
+                "id": "openstack_kilo:ceph-mon",
+                "name": "ceph-mon"
+            },
+            {
+                "optional": false,
+                "description": "Storage volume node",
+                "display_name": "storage-volume",
+                "id": "openstack_kilo:storage-volume",
+                "name": "storage-volume"
+            },
+            {
+                "optional": false,
+                "description": "Controller Node",
+                "display_name": "controller node",
+                "id": "openstack_kilo:controller",
+                "name": "controller"
+            },
+            {
+                "optional": true,
+                "description": "Ceph Storage Node",
+                "display_name": "ceph-osd",
+                "id": "openstack_kilo:ceph-osd",
+                "name": "ceph-osd"
+            },
+            {
+                "optional": false,
+                "description": "Cluster with HA node",
+                "display_name": "ha",
+                "id": "openstack_kilo:ha",
+                "name": "ha"
+            },
+            {
+                "optional": false,
+                "description": "Network server node",
+                "display_name": "Network server node",
+                "id": "openstack_kilo:network-server",
+                "name": "network-server"
+            },
+            {
+                "optional": false,
+                "description": "Identity node",
+                "display_name": "identity",
+                "id": "openstack_kilo:identity",
+                "name": "identity"
+            },
+            {
+                "optional": true,
+                "description": "",
+                "display_name": "ceph-osd-node",
+                "id": "openstack_kilo:ceph-osd-node",
+                "name": "ceph-osd-node"
+            },
+            {
+                "optional": false,
+                "description": "Compute Node",
+                "display_name": "compute node",
+                "id": "openstack_kilo:compute",
+                "name": "compute"
+            },
+            {
+                "optional": true,
+                "description": "onos node",
+                "display_name": "onos",
+                "id": "openstack_kilo:onos",
+                "name": "onos"
+            },
+            {
+                "optional": false,
+                "description": "Database node",
+                "display_name": "Database node",
+                "id": "openstack_kilo:database",
+                "name": "database"
+            },
+            {
+                "optional": false,
+                "description": "All in One",
+                "display_name": "all in one",
+                "id": "openstack_kilo:allinone-compute",
+                "name": "allinone-compute"
+            },
+            {
+                "optional": false,
+                "description": "Dashboard node",
+                "display_name": "dashboard",
+                "id": "openstack_kilo:dashboard",
+                "name": "dashboard"
+            },
+            {
+                "optional": false,
+                "description": "Messaging queue node",
+                "display_name": "Messaging queue node",
+                "id": "openstack_kilo:messaging",
+                "name": "messaging"
+            }
+        ],
+        "os_installer": {
+            "alias": "cobbler",
+            "settings": {
+                "credentials": {
+                    "username": "cobbler",
+                    "password": "cobbler"
+                },
+                "cobbler_url": "http://10.145.250.56/cobbler_api"
+            },
+            "id": "cobbler",
+            "name": "cobbler"
+        },
+        "supported_oses": [
+            {
+                "os_id": "CentOS-7-Minimal-1511-x86_64",
+                "id": "CentOS-7-Minimal-1511-x86_64",
+                "name": "CentOS-7-Minimal-1511-x86_64"
+            },
+            {
+                "os_id": "ubuntu-14.04.3-server-x86_64",
+                "id": "ubuntu-14.04.3-server-x86_64",
+                "name": "ubuntu-14.04.3-server-x86_64"
+            }
+        ],
+        "display_name": "Openstack kilo",
+        "id": "openstack_kilo"
+    }
+]

@@ -10,6 +10,7 @@
  */
 angular
   .module('v3App', [
+    'ui.bootstrap',
     'ui.router',
     'ngAnimate',
     'ngAria',
@@ -18,6 +19,7 @@ angular
     'ngRoute',
     'ngTable',
     'ngSanitize',
+
     'ngTouch'
   ])
 
@@ -49,7 +51,15 @@ angular
         .state('clusterList', {
         url:'/clusterList',
         templateUrl: 'views/cluster-all.html',
-        controller: 'ClusterListController'
+        controller: 'ClusterListController',
+        resolve:{
+
+          allClusterData:function(){
+            console.log("change");
+            return {key:'simple'};
+
+         }
+        }
       })
         .state('wizard', {
         url:'/wizard/{id}?config',
