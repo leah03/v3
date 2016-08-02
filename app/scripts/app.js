@@ -62,7 +62,8 @@ angular
         }
       })
         .state('wizard', {
-        url:'/wizard/{id}?config',
+     //   url:'/wizard/{id}?config',
+        url:'/wizard/',
         templateUrl: 'views/wizard.html',
         controller: 'wizardController'
       })
